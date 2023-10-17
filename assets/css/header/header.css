@@ -1,5 +1,6 @@
 header {
     padding: 3.5rem 2rem 0 2rem;
+    margin-bottom: 14rem;
 }
 @media (min-width: 768px) {
     header {
@@ -92,15 +93,15 @@ header {
 @media (min-width: 768px) {
     .nav__button-singup {
         padding: 1rem 1.5rem;
-        color: var(--colorNeutral-gray);
+        color: #fff;
         background-color: var(--colorPrimary-cyan);
         border: none;
         border-radius: 50px;
-        transition: color 300ms ease-out;
+        transition: background-color 300ms ease-out;
     }
     .nav__button-singup:hover {
         cursor: pointer;
-        color: #fff;
+        background-color: hsla(180, 66%, 49%, 0.5);
     }
 }
 @media (min-width: 1440px) {
@@ -168,25 +169,27 @@ header {
     border: none;   
     font-weight: 700;
     color: var(--colorNeutral-gray);
+    transition: color 300ms ease-out;
 }
 .menu__button-singup {
     padding: 1.5rem;
-    color: var(--colorNeutral-gray);
+    color: #fff;
     background-color: var(--colorPrimary-cyan);
     border: none;
     border-radius: 50px;
+    transition: background-color 300ms ease-out;
 }
-.menu__button-login, .menu__button-singup {
-    transition: color 300ms ease-out;
-}
-.menu__button-login:hover , .menu__button-singup:hover {
+.menu__button-login:hover {
     cursor: pointer;
     color: #fff;
+}
+.menu__button-singup:hover {
+    cursor: pointer;
+    background-color: hsla(180, 66%, 49%, 0.7);
 }
 
 .hero {
     margin-top: 1.5rem;
-    width: 49rem;
 }
 @media (min-width: 768px) {
     .hero {
@@ -242,7 +245,8 @@ header {
     border: none;
     padding: 1.5rem 3rem;
     border-radius: 50px;
-    transition: color 300ms ease-in-out;
+    color: #fff;
+    transition: background-color 300ms ease-in-out;
 }
 @media (min-width: 1440px) {
     .information__button {
@@ -251,5 +255,5 @@ header {
 }
 .information__button:hover {
     cursor: pointer;
-    color: #fff;
+    background-color: hsla(180, 66%, 49%, 0.5);
 }

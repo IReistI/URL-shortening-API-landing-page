@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/globals.css">
   <link rel="stylesheet" href="assets/css/header/header.css">
+  <link rel="stylesheet" href="assets/css/main/main.css">
 </head>
 <body>
   <header>
@@ -48,24 +49,35 @@
       <button class="information__button">Get Started</button>
     </section>
   </header>
-  <!-- Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
-   -->
-  <!-- Shorten a link here...
-
-  Shorten It!
-
+  <main>
+    <div>
+      <form id="form" class="form">
+        <label for="link">
+          <input class="form__input" id="link" type="text" placeholder="Shorten a link here..."/>
+        </label>
+        <button class="form__button">Shorten It!</button>
+      </form>
+      <section class="content">
+        <div class="content__card">
+          <p class="content__url">https://www.frontendmentor.io</p>
+          <p class="content__short-url">https://rel.ink/gxOXp9</p>
+          <button class="content__button">Copy</button>
+        </div>
+        <div class="content__card">
+          <p class="content__url">https://www.frontendmentor.io</p>
+          <p class="content__short-url">https://rel.ink/gxOXp9</p>
+          <button class="content__button content__button--copied">Copied!</button>
+        </div>
+        <div class="content__card">
+          <p class="content__url">https://www.frontendmentor.io</p>
+          <p class="content__short-url">https://rel.ink/gxOXp9</p>
+          <button class="content__button">Copy</button>
+        </div>
+      </section>
+    </div>
+    
+  </main>
+  <!--
   Advanced Statistics
 
   Track how your links are performing across the web with our 
