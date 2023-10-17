@@ -7,11 +7,48 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/globals.css">
+  <link rel="stylesheet" href="assets/css/header/header.css">
 </head>
 <body>
-
-  Features
+  <header>
+    <nav class="nav">
+      <div class="nav__menu">
+        <a href="index.html"><img src="images/logo.svg" alt="logo Shortly"></a>
+        <ul class="nav__ul-1">
+          <li><a class="nav__menu-link" href="#">Features</a></li>
+          <li><a class="nav__menu-link" href="#">Pricing</a></li>
+          <li><a class="nav__menu-link" href="#">Resources</a></li>
+        </ul>
+      </div>
+      <img id="menu" class="nav__icon-menu" src="images/icon-menu.svg" alt="menu hamburger">
+      <div class="nav__menu-buttons">
+        <button class="nav__button-login">Login</button>
+        <button class="nav__button-singup">Sign Up</button>
+      </div>
+    </nav>
+    <div id="nav-menu" class="menu">
+      <ul class="menu__ul-1">
+        <li><a class="menu__link" href="#">Features</a></li>
+        <li><a class="menu__link" href="#">Pricing</a></li>
+        <li><a class="menu__link" href="#">Resources</a></li>
+      </ul>
+      <div class="menu__ul-2">
+        <button class="menu__button-login">Login</button>
+        <button class="menu__button-singup">Sign Up</button>
+      </div>
+    </div>
+    <div class="hero">
+      <img src="images/illustration-working.svg" alt="img hero">
+    </div>
+    <section class="information">
+      <h1 class="information__title">More than just shorter links</h1>
+      <p class="information__text">Build your brand’s recognition and get detailed insights 
+        on how your links are performing.</p>
+      <button class="information__button">Get Started</button>
+    </section>
+  </header>
+  <!-- Features
   Pricing
   Resources
 
@@ -24,8 +61,8 @@
   on how your links are performing.
 
   Get Started
-  
-  Shorten a link here...
+   -->
+  <!-- Shorten a link here...
 
   Shorten It!
 
@@ -75,6 +112,7 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  <script src="assets/js/menu.js"></script>
 </body>
 </html>
