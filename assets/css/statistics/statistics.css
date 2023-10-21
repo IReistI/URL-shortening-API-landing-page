@@ -1,0 +1,102 @@
+.statistics {
+    background-color: var(--colorNeutral-gray);
+    padding: 5rem 2rem;
+}
+@media (min-width: 768px) {
+    .statistics {
+        padding: 5rem;
+    }
+}
+@media (min-width: 1440px) {
+    .statistics {
+        padding-inline: 15rem;
+    }
+}
+.statistics__title {
+    margin: 2rem 0 0 0;
+    text-align: center;
+    color: var(--colorNeutral-veryDarkBlue);
+}
+@media (min-width: 1440px) {
+    .statistics__title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+.statistics__text {
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    color: var(--colorNeutral-grayishViolet);
+}
+@media (min-width: 1440px) {
+    .statistics__text {
+        width: 45%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card-Desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.card {
+    margin-top: 5rem;
+    padding: 0 2rem 4rem 2rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+@media (min-width: 1440px) {
+    .card {
+        padding: 0 3rem 4rem 3rem;
+    }
+    .card:nth-of-type(2) {
+        margin-top: 15rem;
+    }
+    .card:nth-of-type(3) {
+        margin-top: 20rem;
+    }
+}
+.card > div {
+    width: 9rem;
+    height: 9rem;
+    background-color: var(--colorPrimary-darkViolet);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4.5rem;
+}
+.card__img {
+    width: 4rem;
+}
+.card__title {
+    color: var(--colorNeutral-veryDarkBlue);
+}
+.card__text {
+    text-align: center;
+    color: var(--colorNeutral-gray);
+    line-height: 1.5;
+}
+
+.barra {
+    background-color: var(--colorPrimary-cyan);
+    height: 5rem;
+    width: 1rem;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+}
+@media (min-width: 1440px) {
+    .barra {
+        height: 1rem;
+        width: 10rem;
+        margin-bottom: -6rem;
+    }
+}

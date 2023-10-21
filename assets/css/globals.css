@@ -19,6 +19,7 @@ html {
 body {
     font-size: 1.8rem;
     font-family: var(--font-poppins);
+    overflow-x: hidden;
 }
 img {
     width: 100%;
