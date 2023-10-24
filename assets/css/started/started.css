@@ -1,6 +1,6 @@
 .started {
     padding: 9rem 2rem;
-    background-image: url(/images/bg-boost-mobile.svg);
+    background-image: url("/images/bg-boost-mobile.svg");
     background-color: var(--colorPrimary-darkViolet);
     background-repeat: no-repeat;
     background-position: 10px -9px;
@@ -13,7 +13,7 @@
     .started {
         gap: 3rem;
         padding: 5rem 2rem;
-        background-image: url(/images/bg-boost-desktop.svg);
+        background-image: url("/images/bg-boost-desktop.svg");
         background-repeat: repeat-x;
     }
 }
