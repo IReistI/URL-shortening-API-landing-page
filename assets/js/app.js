@@ -16,7 +16,7 @@ function verify(e) {
         createAlert("Please add a link");
         return;
     }
-    if(!validateUrl(e.target.value)) {
+    if(!validateUrl(e.target.value.toLowerCase())) {
         createAlert("Enter a valid Url");
         return;
     }
