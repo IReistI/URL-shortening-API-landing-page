@@ -85,3 +85,10 @@
     border-bottom: 1px solid var(--colorPrimary-cyan);
     transition: border-bottom 300ms ease-out;
 }
+
+.attribution {
+    text-align: center;
+    background-color: var(--colorNeutral-veryDarkViolet);
+    padding-bottom: 2rem;
+    color: #fff;
+}
