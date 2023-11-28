@@ -1,14 +1,45 @@
 import callApi from "./api.js";
+
 const form = document.querySelector("#form");
 const linkInput = document.querySelector("#link-input");
 let urlValue;
 
 document.addEventListener("DOMContentLoaded", () => {
+    let urlsLocal = JSON.parse(localStorage.getItem("urls")) || [];
     linkInput.addEventListener("blur", verify);
     form.addEventListener("submit", e => {
         e.preventDefault();
         submitForm(urlValue);
     });
+    if(urlsLocal.length > 0) {
+        urlsLocal.forEach( url => {
+            const div = document.createElement("DIV");
+            div.classList.add("content__card");
+
+            const urlShort = document.createElement("P");
+            urlShort.classList.add("content__short-url");
+            urlShort.textContent = url.short_url;
+
+            const urlLong = document.createElement("P");
+            urlLong.classList.add("content__url");
+            urlLong.textContent = url.long_url
+
+            const button = document.createElement("BUTTON");
+            button.classList.add("content__button");
+            button.textContent = "Copy";
+            button.onclick = (e) => {
+                navigator.clipboard.writeText(e.target.parentElement.children[1].textContent);
+                e.target.textContent = "Copied!";
+                e.target.classList.add("content__button--copied");
+            };
+
+            div.appendChild(urlLong);
+            div.appendChild(urlShort);
+            div.appendChild(button);
+
+            content.appendChild(div);
+        });
+    }
 });
 function verify(e) {
 

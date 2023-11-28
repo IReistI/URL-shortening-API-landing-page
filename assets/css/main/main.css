@@ -160,4 +160,7 @@ main > div {
 .content__button--copied {
     background-color: var(--colorPrimary-darkViolet);
 }
-
+.content__button--copied:hover {
+    background-color: var(--colorPrimary-darkViolet);
+    cursor: text;
+}
